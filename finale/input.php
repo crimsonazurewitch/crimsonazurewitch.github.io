@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <body>
 
-<h1>My first PHP page</h1>
+    <h1></h1>
+    <?php
+    
+    $destination = "";
 
-<?php
-$id = "";
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["id"]) {
+        $destination = ($_POST["id"] == "Crimson") ? "../index.html" : "./atlastwearriveattheendpoint.html"; # Replace paths and true condition with your stuff
+    }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $id = test_input($_POST["id"]);
-?>
+    header("Location: {$destination}", true, 301);
+    exit();
 
-</body>
+    ?>
+
+    </body>
 </html>
