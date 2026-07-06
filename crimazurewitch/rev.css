@@ -1,0 +1,28 @@
+body {
+    background-image: url("img/bg.png");
+}
+
+p {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Monaco', monospace;
+    font-size: 175%;
+}
+
+.rev {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Monaco', monospace;
+    opacity: 0; 
+    top: 30%;
+    transition: top 1s, opacity 0.5s;
+}
+
+.rev:hover {
+    opacity: 1;
+    top: 40%;
+}
+
+.songinfo {
+    font-size: 200%;
+}

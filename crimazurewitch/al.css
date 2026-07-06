@@ -1,0 +1,47 @@
+body {
+    background-image: url("img/bg.png");
+    background-color: black;
+}
+
+p {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Monaco', monospace;
+    font-size: 200%;
+}
+
+.spoil {
+    color: black;
+    background-color: black;
+    font-family: 'Monaco', monospace; 
+}
+
+.spoil:hover {
+    color: darkred;
+}
+
+.glow {
+    opacity: 0;
+    width: 5%;
+    transition: width 1s, height 1s, opacity 1s;
+}
+
+.glow:hover {
+    opacity: 0.3;
+    width: 10%;
+}
+
+.commit {
+    opacity: 0;
+    width: 12.5%;
+    height: 25%;
+}
+
+.clock {
+    width: 12.5%;
+    height: 25%;
+}
+
+.gem {
+    width: 5%;
+}
