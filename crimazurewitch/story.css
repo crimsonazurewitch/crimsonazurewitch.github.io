@@ -2,6 +2,13 @@ body {
     background-color: black; font-family: Georgia, serif;
 }
 
+p {
+    color: whitesmoke;
+    font-size: 150%;
+    text-align: center;
+    position: fixed;
+}
+
 img {
     position:fixed;
     transform:translate(-50%,-50%);
