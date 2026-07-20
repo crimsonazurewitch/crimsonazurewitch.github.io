@@ -3,6 +3,7 @@
 @font-face { font-family: DotGothic16; src: url('story/DotGothic16.ttf'); }
 @font-face { font-family: MyriadPro; src: url('story/MyriadPro.OTF'); }
 @font-face { font-family: Kazesawa; src: url('story/Kazesawa-Regular.ttf'); }
+@font-face { font-family: Monaco; src: url('monaco.ttf'); }
 
 body {
     background-color: black; font-family: Georgia, serif;
@@ -10,9 +11,7 @@ body {
 
 p {
     color: whitesmoke;
-    font-size: 150%;
-    text-align: center;
-    position: fixed;
+    font-size: 140%;
 }
 
 img {
@@ -24,6 +23,17 @@ div {
     background-color: white;
     position: fixed;
     top: 20%;
+}
+
+.fracture {
+  width: 60%;
+  background-color: #260207;
+  border: #DE143D;
+  border-radius: 1%;
+  color: #FFFFFF;
+  font-family: Monaco;
+  margin:auto;
+  position: static;
 }
 
 .narr {
@@ -51,6 +61,9 @@ div {
 }
 
 .miko {
-    font-family: Outfit;
+    font-family: 'Courier New', Courier, monospace;
 } 
 
+.exit {
+    text-align: center;
+}
