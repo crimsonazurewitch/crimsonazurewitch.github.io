@@ -26,7 +26,7 @@
             case "disgrace-######":
                 $destination = "./crimson/CD-Reveal.html";
                 break;
-            case "return-azure":
+            case "fracturedgate":
                 $destination = "./shatter.html";
                 break;
             default:
