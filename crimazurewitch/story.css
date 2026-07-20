@@ -1,7 +1,8 @@
-@font-face { font-family: Outfit; src: url('Outfit.ttf'); }
-@font-face { font-family: DM-Mono; src: url('DMMono.ttf'); }
-@font-face { font-family: DotGothic16; src: url('DotGothic16.ttf'); }
-@font-face { font-family: MyriadPro; src: url('MyriadPro.otf'); }
+@font-face { font-family: Outfit; src: url('story/Outfit.ttf'); }
+@font-face { font-family: DM-Mono; src: url('story/DMMono.ttf'); }
+@font-face { font-family: DotGothic16; src: url('story/DotGothic16.ttf'); }
+@font-face { font-family: MyriadPro; src: url('story/MyriadPro.OTF'); }
+@font-face { font-family: Kazesawa; src: url('story/Kazesawa-Regular.ttf'); }
 
 body {
     background-color: black; font-family: Georgia, serif;
@@ -38,7 +39,7 @@ div {
 }
 
 .noka {
-    font-family: MyriadPro;
+    font-family: Kazesawa;
 }
 
 .kite {
@@ -49,7 +50,7 @@ div {
     font-family: Outfit;
 }
 
-.lucy {
+.miko {
     font-family: Outfit;
 } 
 
