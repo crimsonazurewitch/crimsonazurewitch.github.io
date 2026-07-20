@@ -1,3 +1,8 @@
+@font-face { font-family: Outfit; src: url('Outfit.ttf'); }
+@font-face { font-family: DM-Mono; src: url('DMMono.ttf'); }
+@font-face { font-family: DotGothic16; src: url('DotGothic16.ttf'); }
+@font-face { font-family: MyriadPro; src: url('MyriadPro.otf'); }
+
 body {
     background-color: black; font-family: Georgia, serif;
 }
@@ -20,11 +25,6 @@ div {
     top: 20%;
 }
 
-@font-face { font-family: Outfit; src: url('Outfit.ttf'); }
-@font-face { font-family: DMMono; src: url('DMMono.ttf'); }
-@font-face { font-family: DotGothic16; src: url('DotGothic16.ttf'); }
-@font-face { font-family: MyriadPro; src: url('MyriadPro.otf'); }
-
 .narr {
     font-family: DotGothic16;
 }
@@ -34,7 +34,7 @@ div {
 }
 
 .miki {
-    font-family: DMMono;
+    font-family: DM-Mono;
 }
 
 .noka {
