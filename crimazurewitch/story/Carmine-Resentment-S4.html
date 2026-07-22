@@ -28,10 +28,10 @@
 
         </p>
         <p class="narr">
-            During their time at the weather station, Lucy would often sit by the shoreline,
-            watching as the waves covered the sand under her feet, and then watch as they pulled away.
-            Each time getting ever so closer to her heart, yet never being able to grasp it.
-            The repetitive motion of the water served to soothe her troubled mind, holding a part of her which longed to be embraced.
+            During their time at the weather station, Lucy would often sit by the shoreline,<br>
+            watching as the waves covered the sand under her feet, and then watch as they pulled away.<br>
+            Each time getting ever so closer to her heart, yet never being able to grasp it.<br>
+            The repetitive motion of the water served to soothe her troubled mind, holding a part of her which longed to be embraced.<br>
         </p>
         <p class="lucy"> Hm? </p>
         <p class="noka"> Ah hello Lucy, Whats up? </p>
@@ -43,8 +43,8 @@
         </p>
         <p class="noka"> I see, It seems like a beautiful location to be at...Unlike here. </p>
         <p class="lucy">
-            That is true...
-            ...
+            That is true...<br>
+            ...<br>
             Do you plan on leaving here after this is over?
         </p>
         <p class="noka"> Hopefully, Im figuring out how to leave as well. </p>
@@ -55,46 +55,105 @@
         <p class="lucy"> Mm... On another note, is the Fracture Ray finally ready? </p>
         <p class="noka"> It about to be, Are you ready to get back? </p>
         <p class="lucy"> 
-            Well... I can't really stay here forever, can I?
-            Thank you, though. 
+            Well... I can't really stay here forever, can I?<br>
+            Thank you, though. <br>
             I wouldn't have been able to go this far without your help, Nonoka.
         </p>
         <p class="noka"> You are welcome Lucy, I hope you will end up somewhere safer, and better. </p>
         <p class="narr"> Lucy smiles and briefly hugs Nonoka before standing up.</p>
         <p class="lucy"> I'll say my farewell to KAITO before I go, okay? </p>
         <p class="narr"> 
-            She runs over to the weather station, the sands shifting once more.
-            Lucy hastily goes into the building and climbs the stairs leading to the second floor.
+            She runs over to the weather station, the sands shifting once more.<br>
+            Lucy hastily goes into the building and climbs the stairs leading to the second floor.<br>
             KAITO turns around to face the girl as she finally makes it.
         </p>
         <p class="kite"> Oh, it’s you, Lucy. Came to say goodbye, I assume? </p>
         <p class="lucy"> 
-            Yeah… I wanted to thank you for keeping me company for so long.
+            Yeah… I wanted to thank you for keeping me company for so long.<br>
             I really appreciate it. 
         </p>
         <p class="kite"> 
-            My pleasure, I hope you’ll find your way back home. 
-            And until your Untitled returns to its original state,
-            it was an amazing opportunity to have a chance to meet you. 
+            My pleasure, I hope you’ll find your way back home. <br>
+            And until your Untitled returns to its original state,<br>
+            it was an amazing opportunity to have a chance to meet you. <br>
             Goodbye, Lucy.
         </p>
         <p class="lucy"> Goodbye, KAITO. Until we meet again. </p>
         <p class="narr"> 
-            Lucy slowly walks back down to the shore.
+            Lucy slowly walks back down to the shore.<br>
             She and Nonoka prepare to arm the Fracture Ray.
         </p>
-        <div class="fracture"> 
+        <div class="fracture" id="panel">
             <p style="text-align: center; color: aliceblue; font-size: 300%;"> <b> [ FractRay-V1.7.0 ] </b> </p>
-            <p style="color: aliceblue; font-size: 200%;"> 
-                Awaiting synchronization…<br>
-                - SEKAI SYNCHRONIZED: Calamity -<br>
-                Gathering I/O Flow… <br>
-                - I/O IMBUED -<br>
-                Preparing Fracture…<br>
-                Fracture Ready. Deploy strike?<br>
-                [Y/N]<br>
+            <p style="color: aliceblue; font-size: 200%;"; id="Init">
+                - AWAITING INITIALIZATION... -<br>
             </p>
+            <button id="Initbtn" class="fracturebutton"; style="text-align: center;"; onclick="FuncInit()"> - BEGIN THE FRACTURE - </button>
+            <p id="Sync" style="color: aliceblue; font-size: 200%;"> </p>
+            <button id="syncbtn" disabled class="fracturebutton"; style="opacity: 0%; width: 0px; height: 0px; text-align: center; color:aliceblue"; onclick="FuncSync()"> </button>
+            <p style="color: aliceblue; font-size: 200%;"; id="Ploy"> </p>
+            <button id="choicebtn" disabled class="fracturebutton"; style="color: #00FF00; opacity: 0%; width: 0px; height: 0px;"; onclick="impact()"> Yes </button>
+            <a href="https://crimsonazurewitch.github.io"> <button id="choicebtn2" disabled class="fracturebutton"; style="color: #FF0000; opacity: 0%; width: 0px; height: 0px;"; onclick="nvm()"> No </button> </a>
         </div>
-        <a href="../story.html"><button class="exit"> … </button></a>
+
+
+        <audio id="impact">
+        <source preload="auto" src="../img/Fract-Ray.ogg" type="audio/ogg">
+        </audio>
+
+        <audio id="bgm">
+            <source preload="auto" src="../img/8-3_Space_Outro_A.ogg" type="audio/ogg">
+        </audio>
+        
+        <script>
+            function FuncInit() { 
+                document.getElementById("Init").innerHTML = "- INITIALIZATION COMPLETE. -";
+                document.getElementById("Sync").innerHTML = "- AWAITING SYNCHRONIZATION... -<br>";
+                document.getElementById("syncbtn").style.width = "auto";
+                document.getElementById("syncbtn").style.height = "20px";
+                document.getElementById("syncbtn").style.opacity = "100%";
+                document.getElementById("syncbtn").disabled = false;
+                document.getElementById("syncbtn").innerHTML = "- SYNCHRONIZE: CALAMITY SEKAI-";
+                document.getElementById("Initbtn").innerHTML = "";
+                document.getElementById("Initbtn").style.width = "0px";
+                document.getElementById("Initbtn").style.height = "0px";
+                document.getElementById("Initbtn").style.opacity = "0%";
+                document.getElementById("Initbtn").disabled = true;
+            }
+            function FuncSync() { 
+                document.getElementById("Sync").innerHTML = "- SEKAI SYNCHRONIZED: CALAMITY -";
+                document.getElementById("syncbtn").innerHTML = "";
+                document.getElementById("syncbtn").style.width = "0px";
+                document.getElementById("syncbtn").style.height = "0px";
+                document.getElementById("syncbtn").style.opacity = "0%";
+                document.getElementById("syncbtn").disabled = true;
+                
+                document.getElementById("Ploy").innerHTML = "- GATHERING I/O FLOW... -<br><br><br><br>- I/O IMBUED. -<br><br><br><br>- PREPARING FRACTURE... -<br><br><br><br>- FRACTURE READY. DEPLOY STRIKE? -<br><br><br><br>- [ Y / N ] -<br>";
+                document.getElementById("choicebtn").style.width = "auto";
+                document.getElementById("choicebtn").style.height = "20px";
+                document.getElementById("choicebtn").style.opacity = "100%";
+                document.getElementById("choicebtn").disabled = false;
+                document.getElementById("choicebtn2").style.width = "auto";
+                document.getElementById("choicebtn2").style.height = "20px";
+                document.getElementById("choicebtn2").style.opacity = "100%";
+                document.getElementById("choicebtn2").disabled = false;
+            }
+
+            function impact() { 
+                document.getElementById("impact").play();
+                document.getElementById("bgm").play();
+                document.getElementById("panel").innerHTML = ''
+                document.getElementById("choicebtn2").style.height = "0px";
+            } 
+
+            function nvm() { 
+                alert("Lucy hesitated as she stared down at the panel.")
+                alert("Nonoka's ambition wavered at the thought of it all going wrong.")
+                alert("Most importantly, You hesitated.")
+                alert("This story cannot end prematurely.")
+                alert("Return here once you reevaluate your choices.")
+            } 
+        </script>
+
     </body>
 </html>

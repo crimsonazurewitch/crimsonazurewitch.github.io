@@ -27,13 +27,30 @@ div {
 
 .fracture {
   width: 60%;
+  height: 700px;
   background-color: #260207;
   border: #DE143D;
-  border-radius: 1%;
+  border-radius: 2.5%;
   color: #FFFFFF;
   font-family: Monaco;
   margin:auto;
   position: static;
+}
+
+.fracturebutton {
+    font-family: Monaco;
+    background-color: #41040d;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 200%;
+    height: 20px;
+    width: auto;
+}
+
+.fracturebutton:hover {
+    background-color: #58131c;
 }
 
 .narr {
