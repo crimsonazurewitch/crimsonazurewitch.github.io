@@ -14,20 +14,17 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["id"]) {
         switch ($_POST["id"]) {
-            case "sacrifice":
-                $destination = "./SH-Reveal.html";
+            case "rue-recollection":
+                $destination = "./azure/L-Reveal.html";
                 break;
-            case "frozen forever":
-                $destination = "./GE-Reveal.html";
+            case "loathedbitter":
+                $destination = "./azure/F-Reveal.html";
                 break;
-            case "alternate-gate":
-                $destination = "./RV-Reveal.html";
+            case "#0000遒ｧ":
+                $destination = "./azure/EDR-Reveal.html";
                 break;
-            case "?":
-                $destination = "./CD-Reveal.html";
-                break;
-            case "":
-                $destination = "./img/jacket-na.png";
+            case "gardensanctuary":
+                $destination = "./azure/HALL-Reveal.html";
                 break;
             case "thisisatest":
                 $destination = "./img/jacket-na.png";
