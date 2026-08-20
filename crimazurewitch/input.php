@@ -20,10 +20,10 @@
             case "whiteball":
                 $destination = "./crimson/GE-Reveal.html";
                 break;
-            case "weh":
+            case "crystalheart":
                 $destination = "./crimson/RV-Reveal.html";
                 break;
-            case "disgrace-######":
+            case "resent-renew":
                 $destination = "./crimson/CD-Reveal.html";
                 break;
             case "fracturedgate":
