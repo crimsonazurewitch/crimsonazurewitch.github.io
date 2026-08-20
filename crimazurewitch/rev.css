@@ -14,10 +14,9 @@ p {
 .rev {
     color: whitesmoke;
     text-align: center;
-    font-family: 'Monaco', monospace;
-    opacity: 0; 
+    font-family: 'Monaco', monospace; 
     top: 30%;
-    transition: top 1s, opacity 0.5s;
+    transition: top 1s;
 }
 
 .rev:hover {
