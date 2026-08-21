@@ -30,7 +30,7 @@
                 $destination = "./img/jacket-na.png";
                 break;
             default:
-                $destination = "./endpoint.html";
+                $destination = "./shatter.html";
                 break;
         }
         # $destination = ($_POST["id"] == "Crimson") ? "../index.html" : "./endpoint.html"; # Replace paths and true condition with your stuff

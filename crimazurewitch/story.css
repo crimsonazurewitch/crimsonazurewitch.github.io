@@ -1,6 +1,6 @@
 @font-face { font-family: Outfit; src: url('story/Outfit.ttf'); }
 @font-face { font-family: DM-Mono; src: url('story/DMMono.ttf'); }
-@font-face { font-family: DotGothic16; src: url('story/DotGothic16.ttf'); }
+@font-face { font-family: DotGothic16; src: url('DotGothic16.ttf'); }
 @font-face { font-family: MyriadPro; src: url('story/MyriadPro.OTF'); }
 @font-face { font-family: Kazesawa; src: url('story/Kazesawa-Regular.ttf'); }
 @font-face { font-family: Monaco; src: url('monaco.ttf'); }
@@ -32,13 +32,13 @@ div {
   border: #DE143D;
   border-radius: 2.5%;
   color: #FFFFFF;
-  font-family: Monaco;
+  font-family: DotGothic16;
   margin:auto;
   position: static;
 }
 
 .fracturebutton {
-    font-family: Monaco;
+    font-family: DotGothic16;
     background-color: #41040d;
     color: #FFFFFF;
     text-align: center;

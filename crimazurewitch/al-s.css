@@ -1,0 +1,48 @@
+@font-face { font-family: DotGothic16; src: url('DotGothic16.ttf'); }
+
+body {
+    background-image: url("img/bg-s.png");
+    background-color: black;
+}
+
+p {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'DotGothic16';
+    font-size: 200%;
+}
+
+.spoil {
+    color: black;
+    background-color: black;
+    font-family: 'DotGothic16'; 
+}
+
+.spoil:hover {
+    color: pink;
+}
+
+.glow {
+    opacity: 0;
+    width: 62.5px;
+    transition: width 1s, height 1s, opacity 1s;
+}
+
+.glow:hover {
+    opacity: 0.3;
+    width: 125px;
+}
+
+.commit {
+    opacity: 0;
+    width: 250px;
+    height: 250px;
+}
+
+.clock {
+    width: 250px;
+}
+
+.gem {
+    width: 62.5px;
+}
