@@ -1,4 +1,4 @@
-@font-face { font-family: Monaco; src: url('monaco.ttf'); }
+@font-face { font-family: DotGothic16; src: url('DotGothic16.ttf'); }
 
 body {
     background-image: url("img/bg.png");
@@ -7,23 +7,25 @@ body {
 p {
     color: whitesmoke;
     text-align: center;
-    font-family: 'Monaco', monospace;
+    font-family: 'DotGothic16', monospace;
     font-size: 175%;
 }
 
 .rev {
     color: whitesmoke;
     text-align: center;
-    font-family: 'Monaco', monospace; 
-    top: 30%;
-    transition: top 1s;
-}
-
-.rev:hover {
-    opacity: 1;
+    font-family: 'DotGothic16', monospace; 
     top: 40%;
+    opacity: 1;
+    animation-name: drop;
+    animation-duration: 1.5s;
 }
 
 .songinfo {
     font-size: 200%;
+}
+
+@keyframes drop {
+    from {top:30%;opacity: 0;}
+    to {top:40%;opacity: 1;}
 }

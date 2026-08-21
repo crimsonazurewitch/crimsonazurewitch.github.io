@@ -1,4 +1,4 @@
-@font-face { font-family: Monaco; src: url('monaco.ttf'); }
+@font-face { font-family: DotGothic16; src: url('DotGothic16.ttf'); }
 
 body {
     background-image: url("img/bg.png");
@@ -8,14 +8,14 @@ body {
 p {
     color: whitesmoke;
     text-align: center;
-    font-family: 'Monaco', monospace;
+    font-family: 'DotGothic16';
     font-size: 200%;
 }
 
 .spoil {
     color: black;
     background-color: black;
-    font-family: 'Monaco', monospace; 
+    font-family: 'DotGothic16'; 
 }
 
 .spoil:hover {

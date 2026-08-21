@@ -1,0 +1,31 @@
+@font-face { font-family: DotGothic16; src: url('DotGothic16.ttf'); }
+
+body {
+    background-image: url("img/bg-a.png");
+}
+
+p {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'DotGothic16';
+    font-size: 175%;
+}
+
+.rev {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'DotGothic16'; 
+    top: 40%;
+    opacity: 1;
+    animation-name: drop;
+    animation-duration: 1.5s;
+}
+
+.songinfo {
+    font-size: 200%;
+}
+
+@keyframes drop {
+    from {top:30%;opacity: 0;}
+    to {top:40%;opacity: 1;}
+}
